@@ -1,7 +1,9 @@
 package com.example.questtugaslayout_0247.ui.theme
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.R
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringArrayResource
 
 private data class Student(
     val name: String,
@@ -41,4 +43,9 @@ fun Act4(modifier: Modifier = Modifier) {
             R.color.card_green, R.color.white,
             R.color.cyan, R.color.white
         )
+    )
+
+    Surface(
+        modifier = modifier.fillMaxSize(),
+        color = colorResource(R.color.screen_background)
     )
