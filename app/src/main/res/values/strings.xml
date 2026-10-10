@@ -19,4 +19,11 @@
         <item>085436874190</item>
     </string-array>
 
+    <string-array name="student_addresses">
+        <item>Turi, Sleman</item>
+        <item>Kasihan, Bantul</item>
+        <item>Depok, Sleman</item>
+        <item>Gamping, Sleman</item>
+    </string-array>
+
 </resources>
