@@ -1,5 +1,6 @@
 package com.example.questtugaslayout_0247.ui.theme
 
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.R
 import androidx.compose.ui.Modifier
@@ -49,3 +50,53 @@ fun Act4(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize(),
         color = colorResource(R.color.screen_background)
     )
+    {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(
+                    horizontal = 20.dp,
+                    vertical = 16.dp
+                ),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Spacer(modifier = Modifier.height(85.dp))
+
+            Text(
+                text = stringResource(R.string.faculty_title),
+                fontSize = 27.sp,
+                fontWeight = FontWeight.Bold,
+                color = colorResource(R.color.title_text)
+            )
+
+            Spacer(modifier = Modifier.height(5.dp))
+
+            Text(
+                text = stringResource(R.string.university_name),
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = colorResource(R.color.title_text)
+            )
+
+            Spacer(modifier = Modifier.height(28.dp))
+
+            students.forEach { student ->
+                StudentCard(student = student)
+
+                Spacer(modifier = Modifier.height(12.dp))
+            }
+
+            Spacer(modifier = Modifier.weight(1f))
+
+            Text(
+                text = stringResource(
+                    R.string.copyright,
+                    Calendar.getInstance().get(Calendar.YEAR)
+                ),
+                fontSize = 12.sp,
+                color = colorResource(R.color.title_text),
+                modifier = Modifier.padding(bottom = 4.dp)
+            )
+        }
+    }
+}
