@@ -114,4 +114,22 @@ private fun StudentCard(student: Student) {
         elevation = CardDefaults.cardElevation(
             defaultElevation = 0.dp
         )
-    )
+    ){
+        Row(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(
+                    horizontal = 14.dp,
+                    vertical = 10.dp
+                ),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = stringResource(
+                    R.string.logo_description
+                ),
+                modifier = Modifier.size(64.dp)
+            )
+
