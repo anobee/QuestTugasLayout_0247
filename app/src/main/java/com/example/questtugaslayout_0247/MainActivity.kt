@@ -16,12 +16,15 @@ import com.example.questtugaslayout_0247.ui.theme.QuestTugasLayout_0247Theme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         enableEdgeToEdge()
+
         setContent {
             QuestTugasLayout_0247Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                Scaffold(
+                    modifier = Modifier.fillMaxSize()
+                ) { innerPadding ->
+                    Act(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
