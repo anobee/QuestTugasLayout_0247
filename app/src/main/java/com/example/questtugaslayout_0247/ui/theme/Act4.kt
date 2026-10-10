@@ -161,3 +161,33 @@ private fun StudentCard(student: Student) {
                     maxLines = 1
                 )
 
+                if (student.phone.isNotBlank()) {
+                    Text(
+                        text = student.phone,
+                        fontSize = 14.sp,
+                        color = colorResource(student.phoneColor),
+                        maxLines = 1
+                    )
+                }
+
+                Text(
+                    text = student.address,
+                    fontSize = 14.sp,
+                    color = colorResource(student.addressColor),
+                    maxLines = 1
+                )
+            }
+
+            Spacer(modifier = Modifier.width(8.dp))
+
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = stringResource(
+                    R.string.logo_description
+                ),
+                modifier = Modifier.size(64.dp)
+            )
+        }
+    }
+}
+
