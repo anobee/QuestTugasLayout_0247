@@ -133,3 +133,31 @@ private fun StudentCard(student: Student) {
                 modifier = Modifier.size(64.dp)
             )
 
+            Spacer(modifier = Modifier.width(12.dp))
+
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = student.name,
+                    fontSize = 20.sp,
+                    fontWeight = if (student.italicName) {
+                        FontWeight.Normal
+                    } else {
+                        FontWeight.Bold
+                    },
+                    fontStyle = if (student.italicName) {
+                        FontStyle.Italic
+                    } else {
+                        FontStyle.Normal
+                    },
+                    fontFamily = if (student.italicName) {
+                        FontFamily.Cursive
+                    } else {
+                        FontFamily.Default
+                    },
+                    color = colorResource(student.nameColor),
+                    maxLines = 1
+                )
+
