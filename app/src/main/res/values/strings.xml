@@ -4,4 +4,11 @@
     <string name="university_name">Universitas Muhammadiyah Yogyakarta</string>
     <string name="logo_description">Logo Universitas Muhammadiyah Yogyakarta</string>
     <string name="copyright">Copyright, 2026</string>
+
+    <string-array name="student_names">
+        <item>Bambang Sumantri</item>
+        <item>Gibran Fathoni</item>
+        <item>Zhilal Fadhilah</item>
+        <item>Ahmad Alfian</item>
+    </string-array>
 </resources>
