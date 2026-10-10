@@ -100,3 +100,18 @@ fun Act4(modifier: Modifier = Modifier) {
         }
     }
 }
+
+@Composable
+private fun StudentCard(student: Student) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(106.dp),
+        shape = RoundedCornerShape(14.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = colorResource(student.cardColor)
+        ),
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = 0.dp
+        )
+    )
