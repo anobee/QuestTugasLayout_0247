@@ -11,4 +11,12 @@
         <item>Zhilal Fadhilah</item>
         <item>Ahmad Alfian</item>
     </string-array>
+
+    <string-array name="student_phones">
+        <item>085372973297</item>
+        <item>085436874190</item>
+        <item>085436874190</item>
+        <item>085436874190</item>
+    </string-array>
+
 </resources>
